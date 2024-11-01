@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim Sayfası</title>
+    <style>
+        /* Genel ayarlar */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Sayfa ve form düzeni */
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: hsl(192, 100%, 89%); /* Açık mor arka plan */
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px;
+            padding: 20px;
+            background-color: #fff0ff; /* Çok açık pembe */
+            box-shadow: 0 0 15px rgba(2, 40, 23, 0.3); /* Mor gölge */
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #e96caa; /* Canlı mor */
+        }
+
+        form label {
+            display: block;
+            margin-top: 10px;
+            text-align: left;
+            color: #e96caa; /* Koyu mor */
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #eca3ec; /* Pembe-mor */
+            border-radius: 5px;
+            background-color:#fff0ff; /* Açık pembe arka plan */
+            color: #8f758f; /* Koyu mor yazı rengi */
+        }
+
+        form textarea {
+            resize: vertical;
+        }
+
+        p {
+            font-style: italic;
+            color: #e96caa; /* Pembe-mor */
+            margin-top: 10px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #e96caa; /* Parlak pembe */
+            color: #f3e7e7;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #eb90bc; /* Daha koyu pembe hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>İletişim</h1>
+        <form action="#" method="post">
+            <label for="name">Adınız:</label>
+            <input type="text" id="name" name="name" placeholder="Adınızı giriniz" value="Merhaba">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email adresinizi giriniz">
+            
+            <label for="message">Mesajınız:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Mesajınızı buraya yazın..."></textarea>
+            
+            <p>Tanıştığımıza memnun oldum!</p>
+            <button type="submit">Gönder</button>
+        </form>
+    </div>
+</body>
+</html>
